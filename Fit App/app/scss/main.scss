@@ -1,0 +1,522 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::placeholder {
+	color: #666;
+}
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1.65;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+	input, textarea {
+		border: #666 1px solid;
+		outline: none;
+		&:focus:required:invalid {
+			border-color: red;
+		}
+		&:required:valid {
+			border-color: green;
+		}
+	}
+}
+
+.img-responsive {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	&.img-width {
+		width: 100%;
+	}
+}
+
+.text-center {
+	text-align: center;
+}
+
+b, strong {
+	font-weight: bold;
+}
+
+span {
+	color: $green;
+}
+
+section {
+	background-size: cover;
+}
+
+@import "media"; // Always at the end
+
+
+/*one section*/
+
+
+.one__section {
+	background-color: #2ecc71;
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+}
+
+
+.header {
+	margin-top: 33px;
+}
+
+.menu__item {
+	list-style: none;
+	display: flex;
+	margin-top: 33px;
+	@media screen and (max-width: 992px) {
+		margin-right: 50px;
+	}  
+	@media screen and (max-width: 768px) {
+		margin-right: -160px;
+	}   
+	@media screen and (max-width: 576px) {
+		display: block;
+	} 
+}
+
+.list__item-link {
+	font-family: $default-font;
+	color: #fff;
+	text-decoration: none;
+	margin-left: 30px;
+	@media screen and (max-width: 768px) {
+		font-size: 18px;
+	}  
+	@media screen and (max-width: 576px) {
+		display: block;
+		white-space: normal;
+		padding-top: 20px;
+	} 
+}
+
+.list__item-link:hover {
+	text-decoration: none;
+}
+
+.button__link {
+	padding: 3px 6px 3px 6px;
+	background: #fff;
+	color: #2ecc71;
+	border-radius: 30px;
+	font-weight: bold;
+	white-space: nowrap;
+	@media screen and (max-width: 576px) {
+		display: none;
+	} 
+}
+
+
+.apple__img {
+	width: 100px;
+	height: 100px;
+	margin-top: 130px;
+}
+
+.phone {
+	width: 350px;
+	height: 550px;
+	margin-top: 80px;
+	@media screen and (max-width: 768px) {
+		display: block;
+		float: right;
+	} 
+}
+
+.better__block {
+	@media screen and (max-width: 768px) {
+	margin-top: -100px;
+	} 
+	@media screen and (max-width: 576px) {
+		margin-top: -290px;
+	} 
+}
+
+.better__title {
+	margin-top: -350px;
+	font-size: 64px;
+	color: #ffffff;
+	font-weight: 300;
+	@media screen and (max-width: 768px) {
+		font-size: 50px;
+	}  
+}
+
+.better__text {
+	font-size: 18px;
+	color: #ffffff;
+	font-weight: 300;
+	line-height: 32px;
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
+	}  
+}
+
+.donload {
+	display: flex;
+	margin-top: 50px;
+	@media screen and (max-width: 992px) {
+		margin-bottom: 30px;
+	}  
+	@media screen and (max-width: 576px) {
+		display: block;
+	} 
+}
+
+.astore {
+	margin-right: 30px;
+}
+
+.google__play {
+	@media screen and (max-width: 576px) {
+		margin-top: 20px;
+	} 
+}
+
+
+/*two section*/
+
+.section__two {
+	background-color: #fff;
+}
+
+.margin {
+	margin-top: 90px;
+	margin-bottom: 100px;
+}
+
+.block__best__counter {
+	display: flex;
+	@media screen and (max-width: 992px) {
+		display: block;
+	}  
+}
+
+.phone__menu-block {
+	display: flex;
+}
+
+.phone__two {
+	@media screen and (max-width: 576px) {
+		width: 900px;
+		height: 600px;
+	} 
+}
+
+.phone__item {
+	list-style: none;
+	background: $gray;
+	padding: 15px 15px 15px 15px;
+	border-radius: 50%;
+	margin-top: 85px;
+}
+
+.sound__item {
+	position: absolute;
+	margin-left: -800px;
+	margin-top: 120px;
+	@media screen and (max-width: 576px) {
+		margin-left: -650px;
+		top: -30px;
+	} 
+}
+
+.days__item {
+	position: absolute;
+	margin-left: -700px;
+	margin-top: 210px;
+	@media screen and (max-width: 576px) {
+		margin-left: -550px;
+		top: -50px;
+	} 
+}
+
+.growth__item {
+	position: absolute;
+	margin-left: -660px;
+	margin-top: 340px;
+	@media screen and (max-width: 576px) {
+		margin-left: -515px;
+		top: -60px;
+	} 
+}
+
+.favorite__item {
+	position: absolute;
+	margin-left: -700px;
+	margin-top: 470px;
+	@media screen and (max-width: 576px) {
+		margin-left: -550px;
+		top: -80px;
+	} 
+}
+
+.interface__item {
+	position: absolute;
+	margin-left: -800px;
+	margin-top: 540px;
+	@media screen and (max-width: 576px) {
+		margin-left: -650px;
+		top: -80px;
+	} 
+}
+
+.sound__item:hover,
+.days__item:hover,
+.growth__item:hover,
+.favorite__item:hover,
+.interface__item:hover {
+	background: $green;
+	padding: 15px 15px 15px 15px;
+	border-radius: 50%;
+	box-shadow: 0 0 50px rgba(0,0,0,0.5)
+}
+
+.counter__block {
+	margin-top: 300px;
+	white-space: nowrap;
+	margin-right: 30px;
+	@media screen and (max-width: 992px) {
+		float: left;
+		margin-top: 30px;
+	}  
+}
+
+.counter__title {
+	font-size: 48px;
+	font-weight: 300;
+}
+
+.counter__text {
+	font-size: 18px;
+}
+
+
+
+/*tree section*/
+
+.tree__section {
+	background: #f9f9f9;
+	@media screen and (max-width: 992px) {
+		width: 992px;
+	}  
+	@media screen and (max-width: 768px) {
+		width: 768px;
+	} 
+}
+
+.block__plan__diet {
+	margin-top: 115px;
+	margin-left: auto;
+	margin-right: auto;
+	@media screen and (max-width: 992px) {
+		margin-left: 0px;
+	} 
+	@media screen and (max-width: 768px) {
+		margin-right: 0px;
+	} 
+}
+
+.plan__diet-title {
+	font-size: 48px;
+	font-weight: 300;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 32px;
+	@media screen and (max-width: 768px) {
+		font-size: 40px;
+		margin-left: 70px;
+	} 
+	@media screen and (max-width: 576px) {
+		margin-left: -100px;
+	} 
+}
+
+.plan__diet-text {
+	font-size: 18px;
+	font-weight: 300;
+	margin-left: auto;
+	margin-right: auto;
+	line-height: 32px;
+	margin-top: 40px; 
+	@media screen and (max-width: 768px) {
+		word-wrap: break-word;
+		font-size: 16px;
+		white-space: nowrap;
+	} 
+	@media screen and (max-width: 576px) {
+		white-space: normal;
+		margin-left: -100px;
+	} 
+}
+
+.block__diet-img {
+	@media screen and (max-width: 992px) {
+		margin-left: -110px;
+		margin-bottom: 50px;
+		display: block;
+	}  
+	@media screen and (max-width: 768px) {
+		margin-left: -270px;
+	} 
+}
+
+.diet__phone-one {
+	margin-left: auto;
+	margin-right: auto;
+	@media screen and (max-width: 992px) {
+		width: 900px;
+		margin-left: 100px;
+		padding-left: 80px;
+	} 
+	@media screen and (max-width: 576px) {
+		width: 700px;
+		margin-left: 50px;
+	} 
+}
+
+
+/*four section*/
+
+
+.meal__time {
+	white-space: nowrap;
+	margin-top: 270px;
+	@media screen and (max-width: 992px) {
+		display: block;
+	}  
+	@media screen and (max-width: 576px) {
+		margin-top: 50px;
+	} 
+}
+
+.meal__time-title {
+	font-size: 48px;
+	font-weight: 300;
+	line-height: 60px;
+}
+
+.meal__time-text {
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 32px;
+	margin-top: 20px;
+}
+
+.food-card {
+	margin-left: -10px;
+	@media screen and (max-width: 992px) {
+		display: block;
+		margin-top: 450px;
+		margin-left: -300px;
+	}  
+	@media screen and (max-width: 768px) {
+		margin-left: -450px;
+	} 
+	@media screen and (max-width: 576px) {
+		margin-left: -790px;
+	} 
+}
+
+.food__card-one {
+	margin-left: -250px;
+}
+
+.food__card-two {
+	margin-left: 40px;
+	margin-top: -350px;
+}
+
+.food__card-tree {
+	margin-top: -100px;
+	margin-left: 80px;
+	margin-bottom: 140px;
+}
+
+/*five section*/
+
+.five__section {
+	background: $green;
+	background-size: 100%;
+}
+
+.download {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 100px;
+}
+
+.download__block {
+	margin-top: 115px;
+	color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.download__title {
+	font-size: 48px;
+	font-weight: 300;
+	@media screen and (max-width: 768px) {
+		font-size: 40px;
+		margin-left: 100px;
+	} 
+	@media screen and (max-width: 576px) {
+		margin-left: 20px;
+	} 
+}
+
+.download__text {
+	margin-top: 40px;
+	font-size: 18px;
+	font-weight: 300;
+	line-height: 32px;
+	margin-left: -80px;
+	@media screen and (max-width: 768px) {
+		font-size: 16px;
+		margin-left: 20px;
+	} 
+}
+
+.link__footer {
+	margin-left: 200px;
+	margin-top: 60px;
+}
+
+.download__link {
+	color: $green;
+	font-size: 18px;
+	padding-top: 13px;
+	padding-left: 70px;
+	padding-right: 70px;
+	padding-bottom: 13px;
+	background: #fff;
+	border-radius: 50px;
+	font-weight: bold;
+	@media screen and (max-width: 768px) {
+		margin-left: 50px;
+	} 
+	@media screen and (max-width: 576px) {
+		margin-left: -30px;
+	} 
+}
+
+.download__link:hover {
+	text-decoration: none;
+	color: $green;
+}
+
