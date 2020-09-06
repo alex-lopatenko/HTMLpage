@@ -5,4 +5,5 @@
   <li><a href="https://alex-lopatenko.github.io/HTMLpage/Travelly/index.html">Travelly</a></li>
   <li><a href="https://alex-lopatenko.github.io/HTMLpage/Tesla/index.html">Tesla</a></li>
   <li><a href="https://alex-lopatenko.github.io/HTMLpage/To2rent/index.html">To2rent</a></li>
+  <li><a href="https://alex-lopatenko.github.io/DiGi-MobileFirst-/">DiGi по технологии: mobile first (Проект в разработке)</a></li>
 </ul>
